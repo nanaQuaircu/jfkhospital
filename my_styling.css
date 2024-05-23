@@ -1,0 +1,165 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 24px;
+    /* overflow: hidden; */
+}
+
+
+.navbar{
+    border:none;
+    padding:0px;
+    margin:0px;
+}
+
+main{
+    overflow: hidden;
+}
+
+
+.sub-nav{
+    background-color:hsl(0, 0%, 100%);
+    color:white;
+    height:40px;
+    margin-top:60px;
+    padding:10px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width:1180px) {
+    .sub-nav{
+       display:none !important;
+    } 
+    
+    .sec-body .row .mx-4{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:568px) { 
+    .cont{
+        margin-top: 50px;
+    }
+    
+    .gal{
+        margin-top: 50px;
+    } 
+
+    .pic{
+        margin-top: 50px;
+    }
+} 
+
+.col-2 .fa{
+    color: rgba(42, 54, 221, 0.89);
+}
+
+.body{
+    height: 100vh;
+    width:100%;
+    position: relative;
+    background-image:url(/image/bg-doc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.w-40 img{
+    height: 100%;
+    width: 100%;
+}
+
+.care{
+    height: 65vh;
+}
+
+.box .card {
+    transition: transform 0.2s ease;
+    /* box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
+    border-radius: 2;
+    border: 2;
+    margin-bottom: 1.5em; */
+  }
+
+.box .card:hover {
+    transform: scale(1.1);
+  }
+
+/* About */
+.header{
+    height: 70vh;
+    width:100%;
+    position:relative;
+    background-image:linear-gradient(rgba(60, 214, 200, 0.8),rgba(60, 214, 200, 0.8)),url(/image/Naming-rights-2.jpg);
+    background-repeat:no-repeat;
+    background-size:cover; 
+    background-position:center; 
+}
+
+.news-head{
+    text-align: center ;
+}
+
+.dark-footer{
+    width:100%;
+    height:50px;
+    padding:5px;
+}
+
+.footer{
+    margin:0px;
+    padding:0px;
+}
+
+/* Update */
+
+#open-btn{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    transition: .5s;
+}
+
+#model{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%); 
+   width: 200px;
+   height: 100px;
+   font-size: 1.5rem;
+   align-items: center;
+   animation-name: animatemodel;
+   animation-duration: .4s;
+}
+
+#close-btn{
+    cursor: pointer;
+}
+
+#model-container{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgb(0,0,0, .2);
+}
+
+/* Model Amition Section */
+
+@keyframes animatemodel{
+    from{
+        top: -300px;
+        opacity: 0;
+    }
+
+    to{
+        top: 50%;
+        opacity: 1;
+    }
+}
